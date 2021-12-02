@@ -49,9 +49,5 @@ provisioner "shell" {
       script = "provisionner.sh"
     }
 
-provisioner "ansible" {
-      playbook_file = "playbook.yml"
-    }
-
 }
 
