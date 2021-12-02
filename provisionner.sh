@@ -16,3 +16,4 @@ systemctl start golang-myip.service
 
 systemctl enable golang-myip.service
 
+curl 127.0.0.1:80
