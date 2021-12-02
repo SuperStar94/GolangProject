@@ -9,13 +9,13 @@ source "qemu" "example" {
   http_directory    = "./ks"
   ssh_username      = "root"
   ssh_password      = "%Serveur44"
-  ssh_timeout       = "20m"
+  ssh_timeout       = "40m"
   vm_name           = "tdhtest"
   memory            = "2048"
   net_device        = "virtio-net"
   disk_interface    = "virtio"
   boot_wait         = "10s"
-  boot_command      = ["<tab> text inst.ks=http://192.168.124.1:{{ .HTTPPort }}/rocky-8.cfg<enter><wait>"]
+  boot_command      = ["<tab> text inst.ks=http://192.168.122.1:{{ .HTTPPort }}/rocky-8.cfg<enter><wait>"]
   qemu_binary       = "/usr/libexec/qemu-kvm"
   display           = "none"
   headless          = "true"
