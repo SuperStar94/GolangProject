@@ -1,0 +1,5 @@
+- name: "No SE Linux"
+  hosts: localhost
+  remote_user: root
+  tasks:
+    - selinux: state=disabled
